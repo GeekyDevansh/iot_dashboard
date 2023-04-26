@@ -18,7 +18,7 @@ console.log(data);
 const newone =[];
 var serie = data[data.length -1];
 const final = serie?.value;
-const ffinal = (final/(-800000))*100;
+const ffinal = (final/(-138174))*100;
 newone.push(Math.round(ffinal))
 
   const [options,setOptions]=useState({
@@ -97,7 +97,7 @@ newone.push(Math.round(ffinal))
     stroke: {
       lineCap: 'round'
     },
-    labels: ['Tank Level'],
+    labels: ['Tank Level (in %)'],
   })
 
   return (
