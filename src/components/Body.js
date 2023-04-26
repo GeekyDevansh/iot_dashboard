@@ -18,7 +18,9 @@ console.log(data);
 const newone =[];
 var serie = data[data.length -1];
 const final = serie?.value;
-const ffinal = (final/(-138174))*100;
+console.log(final);
+const ffinal = Math.abs(((final*100 + 85400000) / 68400000) * 100);
+console.log(ffinal)
 newone.push(Math.round(ffinal))
 
   const [options,setOptions]=useState({
